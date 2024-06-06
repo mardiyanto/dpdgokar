@@ -7,7 +7,7 @@ include "koneksi.php";
 
     <head>
         <meta charset="utf-8">
-        <title>PestKit - Pest Control Website Template</title>
+        <title><?php echo"$k_k[nama]";?></title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -53,9 +53,9 @@ include "koneksi.php";
                         <img src="tema/img/carousel-2.jpg" class="img-fluid w-100" alt="First slide">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h4 class="text-white mb-4 animated slideInDown">No 1 Pest Control Services</h4>
-                                <h1 class="text-white display-1 mb-4 animated slideInDown">Enjoy Your Home Totally Pest Free</h1>
-                                <a href="" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Read More</button></a>
+                                <h4 class="text-white mb-4 animated slideInDown">Bersama Kami Bisa</h4>
+                                <h1 class="text-white display-1 mb-4 animated slideInDown">Kami ada Untuk Rakyat</h1>
+                                <a href="index.php#tentang" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Read More</button></a>
                             </div>
                         </div>
                     </div>
@@ -63,9 +63,9 @@ include "koneksi.php";
                         <img src="tema/img/carousel-1.jpg" class="img-fluid w-100" alt="Second slide">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h4 class="text-white mb-4 animated slideInDown">No 1 Pest Control Services</h4>
-                                <h1 class="text-white display-1 mb-4 animated slideInDown">Enjoy Your Home Totally Pest Free</h1>
-                                <a href="" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Read More</button></a>
+                                <h4 class="text-white mb-4 animated slideInDown">Bersama Golkar</h4>
+                                <h1 class="text-white display-1 mb-4 animated slideInDown">Golkar Menang Rakayat Senang</h1>
+                                <a href="index.php#tentang" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Read More</button></a>
                             </div>
                         </div>
                     </div>
@@ -94,61 +94,16 @@ include "koneksi.php";
                             <img src="tema/img/about-img.jpg" class="img-fluid h-100" alt="img">
                             <div class="bg-white experiences">
                                 <h1 class="display-3">20</h1>
-                                <h6 class="fw-bold">Years Of Experiences</h6>
+                                <h6 class="fw-bold">Tahun Kami ada</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".6s">
                         <div class="about-item overflow-hidden">
                             <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Tentang Kami</h5>
-                            <h1 class="display-5 mb-2">World Best Pest Control Services Since 2008</h1>
-                            <p class="fs-5" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiu smod tempor incididunt ut labore dolore magna aliqua.Quis ipsum suspen disse ultrices gravida Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <div class="p-4 bg-dark rounded d-flex" style="align-items: center; justify-content: center;">
-                                            <i class="fas fa-city fa-4x text-primary"></i>
-                                        </div>
-                                        <div class="my-2">
-                                            <h5>Building</h5>
-                                            <h5>Cleaning</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <div class="p-4 bg-dark rounded d-flex" style="align-items: center; justify-content: center;">
-                                            <i class="fas fa-school fa-4x text-primary"></i>
-                                        </div>
-                                        <div class="my-2">
-                                            <h5>Education</h5>
-                                            <h5>center</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <div class="p-4 bg-dark rounded d-flex" style="align-items: center; justify-content: center;">
-                                            <i class="fas fa-warehouse fa-4x text-primary"></i>
-                                        </div>
-                                        <div class="my-2">
-                                            <h5>Warehouse</h5>
-                                            <h5>Cleaning</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <div class="p-4 bg-dark rounded d-flex" style="align-items: center; justify-content: center;">
-                                            <i class="fas fa-hospital fa-4x text-primary"></i>
-                                        </div>
-                                        <div class="my-2">
-                                            <h5>Hospital</h5>
-                                            <h5>Cleaning</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <h1 class="display-5 mb-2">Selamat datang di website <?php echo"$k_k[nama]";?></h1>
+                            <p class="fs-5" style="text-align: justify;"><?php echo"$k_k[isi]";?></p>
+                            
                             <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-5">Find Services</button>
                         </div>
                     </div>
@@ -159,7 +114,7 @@ include "koneksi.php";
 
 
         <!-- Services Start -->
-        <div class="container-fluid services py-5">
+        <!-- <div class="container-fluid services py-5">
             <div class="container text-center py-5">
                 <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
                     <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Services</h5>
@@ -217,66 +172,29 @@ include "koneksi.php";
                 </div>
                 <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-4 wow fadeInUp" data-wow-delay=".3s">More Services</button>
             </div>
-        </div>
+        </div> -->
         <!-- Services End -->
 
 
         <!-- Project Start -->
-        <div class="container-fluid py-5">
+        <div id="galeri" class="container-fluid py-5">
             <div class="container py-5">
                 <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
                     <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Project</h5>
-                    <h1 class="display-5">Our recently completed projects</h1>
+                    <h1 class="display-5">Galeri Kami</h1>
                 </div>
                 <div class="row g-5">
+                <?php  $tebaru=mysqli_query($koneksi," SELECT * FROM galeri ORDER BY id_galeri DESC  LIMIT 3");
+                        while ($t=mysqli_fetch_array($tebaru)){ ?>  
                     <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
                         <div class="project-item">
                             <div class="project-left bg-dark"></div>
                             <div class="project-right bg-dark"></div>
-                            <img src="tema/img/project-1.jpg" class="img-fluid h-100" alt="img">
-                            <a href="" class="fs-4 fw-bold text-center">Whole Home Sanitizing</a>
+                            <img src="foto/galleri/<?php echo"$t[gambar]";?>" class="img-fluid h-100" alt="img">
+                            <a href="" class="fs-4 fw-bold text-center"><?php echo"$t[judul]";?></a>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-left bg-dark"></div>
-                            <div class="project-right bg-dark"></div>
-                            <img src="tema/img/project-2.jpg" class="img-fluid h-100" alt="img">
-                            <a href="" class="fs-4 fw-bold text-center">Education center Cleaning</a>
-                        </div>
-                    </div>
-                    <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-left bg-dark"></div>
-                            <div class="project-right bg-dark"></div>
-                            <img src="tema/img/project-3.jpg" class="img-fluid h-100" alt="img">
-                            <a href="" class="fs-4 fw-bold text-center">Warehouse Cleaning</a>
-                        </div>
-                    </div>
-                    <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-left bg-dark"></div>
-                            <div class="project-right bg-dark"></div>
-                            <img src="tema/img/project-4.jpg" class="img-fluid h-100" alt="img">
-                            <a href="" class="fs-4 fw-bold text-center">Hospital Cleaning</a>
-                        </div>
-                    </div>
-                    <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-left bg-dark"></div>
-                            <div class="project-right bg-dark"></div>
-                            <img src="tema/img/project-5.jpg" class="img-fluid h-100" alt="img">
-                            <a href="" class="fs-4 fw-bold text-center">Factory Cleaning</a>
-                        </div>
-                    </div>
-                    <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-left bg-dark"></div>
-                            <div class="project-right bg-dark"></div>
-                            <img src="tema/img/project-6.jpg" class="img-fluid h-100" alt="img">
-                            <a href="" class="fs-4 fw-bold text-center">Furniture Sanitizing</a>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
@@ -284,201 +202,55 @@ include "koneksi.php";
 
 
         <!-- Blog Start -->
-        <div class="container-fluid py-5">
+        <div id="informasi" class="container-fluid py-5">
             <div class="container py-5">
                 <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Blog</h5>
-                    <h1 class="display-5">Latest Blog & News</h1>
+                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Blog Kami</h5>
+                    <h1 class="display-5">Berita Terkini</h1>
                 </div>
                 <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay=".5s">
+                <?php $tebaru=mysqli_query($koneksi," SELECT * FROM berita WHERE jenis='informasi' ORDER BY id_berita DESC  LIMIT 6");
+while ($t=mysqli_fetch_array($tebaru)){ ?>
                     <div class="blog-item">
-                        <img src="tema/img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        <img src="foto/data/<?php echo"$t[gambar]";?>" class="img-fluid w-100 rounded-top" alt="">
                          <div class="rounded-bottom bg-light">
                             <div class="d-flex justify-content-between p-4 pb-2">
                                 <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                                <span class="text-dark"><i class="fas fa-calendar-alt me-2"></i>10 Feb, 2023</span>
+                                <span class="text-dark"><i class="fas fa-calendar-alt me-2"></i><?php echo"$t[tanggal]";?></span>
                             </div>
                             <div class="px-4 pb-0">
-                                <h4>How To Build A Cleaning Plan</h4>
-                                <p>Lorem ipsum dolor sit amet consectur adip sed eiusmod tempor.</p>
+                                <h4><?php echo"$t[judul]";?></h4>
                             </div>
                             <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="#" type="button" class="btn btn-primary border-0">Learn More</a>
-                                <a href="#" class="my-auto btn-primary border-0"><i class="fa fa-comments me-2"></i>23 Comments</a>
+                                <a href="utama.php?aksi=detailberita&id_berita=<?php echo"$t[id_berita]";?>" type="button" class="btn btn-primary border-0">Learn More</a>
+                                <a href="utama.php?aksi=detailberita&id_berita=<?php echo"$t[id_berita]";?>" class="my-auto btn-primary border-0"><i class="fa fa-comments me-2"></i>23 <?php echo"$t[dilihat]";?></a>
                             </div>
                         </div>
                     </div>
-                    <div class="blog-item">
-                        <img src="tema/img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
-                         <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                                <span class="text-dark"><i class="fas fa-calendar-alt me-2"></i>10 Feb, 2023</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>How To Build A Cleaning Plan</h4>
-                                <p>Lorem ipsum dolor sit amet consectur adip sed eiusmod tempor.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="#" type="button" class="btn btn-primary border-0">Learn More</a>
-                                <a href="#" class="my-auto text-dark"><i class="fa fa-comments me-2"></i>23 Comments</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-item">
-                        <img src="tema/img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                         <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                                <span class="text-dark"><i class="fas fa-calendar-alt me-2"></i>10 Feb, 2023</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>How To Build A Cleaning Plan</h4>
-                                <p>Lorem ipsum dolor sit amet consectur adip sed eiusmod tempor.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="#" type="button" class="btn btn-primary border-0">Learn More</a>
-                                <a href="#" class="my-auto text-dark"><i class="fa fa-comments me-2"></i>23 Comments</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-item">
-                        <img src="tema/img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                         <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                                <span class="text-dark"><i class="fas fa-calendar-alt me-2"></i>10 Feb, 2023</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>How To Build A Cleaning Plan</h4>
-                                <p>Lorem ipsum dolor sit amet consectur adip sed eiusmod tempor.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="#" type="button" class="btn btn-primary border-0">Learn More</a>
-                                <a href="#" class="my-auto text-dark"><i class="fa fa-comments me-2"></i>23 Comments</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
+                    
                 </div>
             </div>
         </div>
         <!-- Blog End -->
-
-
-        <!-- Call To Action Start -->
-        <div class="container-fluid py-5 call-to-action wow fadeInUp" data-wow-delay=".3s" style="margin: 6rem 0;">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <img src="tema/img/action.jpg" class="img-fluid w-100 rounded-circle p-5" alt="">
-                    </div>
-                    <div class="col-lg-6 my-auto">
-                        <div class="text-start mt-4">
-                            <h1 class="pb-4 text-white">Sign Up To Our Newsletter To Get The Latest Offers</h1>
-                        </div>
-                        <form method="post" action="index.html">
-                            <div class="form-group">
-                                <div class="d-flex call-btn">
-                                    <input type="search" class="form-control py-3 px-4 w-100 border-0 rounded-0 rounded-end rounded-pill" name="search-input" value="" placeholder="Enter Your Email Address" required="Please enter a valid email"/>
-                                    <button type="email" value="Search Now!" class="btn btn-primary border-0 rounded-pill rounded rounded-start px-5">Subscribe</button>
-                                </div>
-                            </div>
-                        </form>  
-                    </div>
-                </div> 
-            </div>
-        </div>
-        <!-- Call To Action End -->
-
-
-        <!-- pricing Start -->
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Pricing</h5>
-                    <h1 class="display-5 w-50 mx-auto">Affordable Pricing Plan For Pest Control Services</h1>
-                </div>
-                <div class="row g-5">
-                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="rounded bg-light pricing-item">
-                            <div class="bg-primary py-3 px-5 text-center rounded-top border-bottom border-dark">
-                                <h2 class="m-0">Basic</h2>
-                            </div>
-                            <div class="px-4 py-5 text-center bg-primary pricing-label mb-2">
-                                <h1 class="mb-0">$60<span class="text-secondary fs-5 fw-normal">/mo</span></h1>
-                                <p class="mb-0">Basic Pest Control</p>
-                            </div>
-                            <div class="p-4 text-center fs-5">
-                                <p><i class="fa fa-check text-success me-2"></i>Household pests Control</p>
-                                <p><i class="fa fa-check text-success me-2"></i>Rodent Control</p>
-                                <p><i class="fa fa-check text-success me-2"></i>Re-Service at No-Charge</p>
-                                <p><i class="fa fa-times text-danger me-2"></i>Termite Control</p>
-                                <p><i class="fa fa-times text-danger me-2"></i>Mosquito Reduction</p>
-                                <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-3">Get Started</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="rounded bg-light pricing-item">
-                            <div class="bg-dark py-3 px-5 text-center rounded-top border-bottom border-primary">
-                                <h2 class="m-0 text-primary">Standerd</h2>
-                            </div>
-                            <div class="px-4 py-5 text-center bg-dark pricing-label pricing-featured mb-2">
-                                <h1 class="mb-0 text-primary">$80<span class="fs-5 fw-normal">/mo</span></h1>
-                                <p class="mb-0 text-white">Standard Pest Control</p>
-                            </div>
-                            <div class="p-4 text-center fs-5">
-                                <p><i class="fa fa-check text-success me-2"></i>Household pests Control</p>
-                                <p><i class="fa fa-check text-success me-2"></i>Rodent Control</p>
-                                <p><i class="fa fa-check text-success me-2"></i>Re-Service at No-Charge</p>
-                                <p><i class="fa fa-check text-success me-2"></i>Termite Control</p>
-                                <p><i class="fa fa-times text-danger me-2"></i>Mosquito Reduction</p>
-                                <button type="button" class="btn btn-dark border-0 text-primary rounded-pill px-4 py-3 mt-3">Get Started</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="rounded bg-light pricing-item">
-                            <div class="bg-primary py-3 px-5 text-center rounded-top border-bottom border-dark">
-                                <h2 class="m-0">Premium</h2>
-                            </div>
-                            <div class="px-4 py-5 text-center bg-primary pricing-label mb-2">
-                                <h1 class="mb-0">$120<span class="text-secondary fs-5 fw-normal">/mo</span></h1>
-                                <p class="mb-0">Premium Pest Control</p>
-                            </div>
-                            <div class="p-4 text-center fs-5">
-                                <p><i class="fa fa-check text-success me-2"></i>Household pests Control</p>
-                                <p><i class="fa fa-check text-success me-2"></i>Rodent Control</p>
-                                <p><i class="fa fa-check text-success me-2"></i>Re-Service at No-Charge</p>
-                                <p><i class="fa fa-check text-success me-2"></i>Termite Control</p>
-                                <p><i class="fa fa-check text-success me-2"></i>Mosquito Reduction</p>
-                                <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-3">Get Started</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Pricing End -->
-
 
         <!-- Team Start -->
         <div class="container-fluid py-5">
             <div class="container py-5">
                 <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
                     <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Team</h5>
-                    <h1 class="display-5 w-50 mx-auto">Our Team Members</h1>
+                    <h1 class="display-5 w-50 mx-auto">Jajaran Kami</h1>
                 </div>
                 <div class="row g-5">
                     <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
                         <div class="rounded team-item">
                             <img src="tema/img/team-1..jpg" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
                             <div class="team-content bg-primary text-dark text-center py-3">
-                                <span class="fs-4 fw-bold">Full Name</span>
-                                <p class="text-muted mb-0">Designation</p>
+                                <span class="fs-4 fw-bold">Airlangga Hartarto</span>
+                                <p class="text-muted mb-0">Ketua Partai Golkar</p>
                             </div>
                             <div class="team-icon d-flex flex-column ">
-                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/AirlanggaHartarto/photos/a.760842563963078/1057523870961611/?type=3" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="btn btn-primary border-0"><i class="fab fa-linkedin-in"></i></a>
@@ -489,11 +261,11 @@ include "koneksi.php";
                         <div class="rounded team-item">
                             <img src="tema/img/team-2.jpg" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
                             <div class="team-content bg-primary text-dark text-center py-3">
-                                <span class="fs-4 fw-bold">Full Name</span>
-                                <p class="text-muted mb-0">Designation</p>
+                                <span class="fs-4 fw-bold">Arinal Djunaidi</span>
+                                <p class="text-muted mb-0">Ketua Partai Golkar Lampung</p>
                             </div>
                             <div class="team-icon d-flex flex-column ">
-                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/djunaidiarinal/?locale=id_ID" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="btn btn-primary border-0"><i class="fab fa-linkedin-in"></i></a>
@@ -504,11 +276,11 @@ include "koneksi.php";
                         <div class="rounded team-item">
                             <img src="tema/img/team-3.jpg" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
                             <div class="team-content bg-primary text-dark text-center py-3">
-                                <span class="fs-4 fw-bold">Full Name</span>
-                                <p class="text-muted mb-0">Designation</p>
+                                <span class="fs-4 fw-bold">supriyadi hamzah</span>
+                                <p class="text-muted mb-0">Sekertatis Golkar Lampung</p>
                             </div>
                             <div class="team-icon d-flex flex-column ">
-                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/photo/?fbid=613365897561152&set=a.613365850894490" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="btn btn-primary border-0"><i class="fab fa-linkedin-in"></i></a>
@@ -519,8 +291,8 @@ include "koneksi.php";
                         <div class="rounded team-item">
                             <img src="tema/img/team-4.jpg" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
                             <div class="team-content bg-primary text-dark text-center py-3">
-                                <span class="fs-4 fw-bold">Full Name</span>
-                                <p class="text-muted mb-0">Designation</p>
+                                <span class="fs-4 fw-bold"> Rahman Kholid</span>
+                                <p class="text-muted mb-0">Ketua Golkar Pesisir Barat</p>
                             </div>
                             <div class="team-icon d-flex flex-column ">
                                 <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
@@ -535,115 +307,95 @@ include "koneksi.php";
         </div>
         <!-- Team End -->
 
-
-        <!-- Testiminial Start -->
-        <div class="container-fluid testimonial py-5">
+ <!-- Contact Start -->
+ <div id="kontak" class="container-fluid py-5">
             <div class="container py-5">
                 <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Testimonial</h5>
-                    <h1 class="display-5 w-50 mx-auto">What Clients Say About Our Services</h1>
+                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Hubungi</h5>
+                    <h1 class="display-5 w-50 mx-auto">Hubungi Kami</h1>
                 </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay=".5s">
-                    <div class="testimonial-item">
-                        <div class="testimonial-content rounded mb-4 p-4">
-                            <p class="fs-5 m-0">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam quis tempor.</p>
+                <div class="row g-5 mb-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="h-100">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213880.80085089884!2d103.85459111233278!3d-5.071891683462296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e47bb6aa7bbfb69%3A0xaadd3538afa3d0bb!2sKabupaten%20Pesisir%20Barat%2C%20Lampung!5e0!3m2!1sid!2sid!4v1715844529904!5m2!1sid!2sid" class="border-0 rounded w-100 h-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="d-flex align-items-center  mb-4" style="padding: 0 0 0 25px;">
-                            <div class="position-relative">
-                                <img src="tema/img/testimonial-1.jpg" class="img-fluid rounded-circle py-2" alt="">
-                                <div class="position-absolute" style="top: 33px; left: -25px;">
-                                    <i class="fa fa-quote-left rounded-pill bg-primary text-dark p-3"></i>
-                                </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+						<p class="mb-4">Informasi Konta Kami merupakan informasi untuk kritik dan saran atau untuk meninggalkan pesan terhadap admin website kami</p>
+                       <form method='post' action='utama.php?aksi=inputhubungi'>
+                        <div class="rounded contact-form">
+                            <div class="mb-4">
+                                <input type="text" name='nama' class="form-control p-3" placeholder="Your Name">
                             </div>
-                            <div class="ms-3">
-                                <h4 class="mb-0">Client Name</h4>
-                                <p class="mb-1">Profession</p>
-                                <div class="d-flex">
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
+                            <div class="mb-4">
+                                <input type="email" name='email' class="form-control p-3" placeholder="Your Email">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <textarea class="w-100 form-control p-3" rows="6" cols="10" name='pesan' placeholder="Message"></textarea>
+                            </div>
+                            <button type='submit' class="btn btn-primary border-0 py-3 px-4 rounded-pill" type="button">Kirim</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row g-4 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="d-flex bg-light p-3 rounded contact-btn-link">
+                            <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
+                                <i class="fa fa-share text-dark"></i>
+                            </div>
+                            <div class="ms-3 contact-link">
+                                <h4 class="text-dark">fallow Us</h4>
+                                <div class="d-flex justify-content-center">
+                                    <a class="pe-2" href="#"><i class="fab fa-facebook-f text-dark"></i></a>
+                                    <a class="px-2" href="#"><i class="fab fa-twitter text-dark"></i></a>
+                                    <a class="px-2" href="#"><i class="fab fa-instagram text-dark"></i></a>
+                                    <a class="px-2" href="#"><i class="fab fa-linkedin-in text-dark"></i></a>
+                                    <a class="px-2" href="#"><i class="fab fa-youtube text-dark"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-content rounded mb-4 p-4">
-                            <p class="fs-5 m-0">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam quis tempor.</p>
-                        </div>
-                        <div class="d-flex align-items-center  mb-4" style="padding: 0 0 0 25px;">
-                            <div class="position-relative">
-                                <img src="tema/img/testimonial-2.jpg" class="img-fluid rounded-circle py-2" alt="">
-                                <div class="position-absolute" style="top: 33px; left: -25px;">
-                                    <i class="fa fa-quote-left rounded-pill bg-primary text-dark p-3"></i>
-                                </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="d-flex bg-light p-3 rounded contact-btn-link">
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
+                                <i class="fas fa-map-marker-alt text-dark"></i>
                             </div>
-                            <div class="ms-3">
-                                <h4 class="mb-0">Client Name</h4>
-                                <p class="mb-1">Profession</p>
-                                <div class="d-flex">
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                </div>
+                            <div class="ms-3 contact-link">
+                                <h4 class="text-dark">Address</h4>
+                                <a href="#">
+                                    <h5 class="text-dark d-inline fs-6"><?php echo"$k_k[alamat]";?></h5>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-content rounded mb-4 p-4">
-                            <p class="fs-5 m-0">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam quis tempor.</p>
-                        </div>
-                        <div class="d-flex align-items-center  mb-4" style="padding: 0 0 0 25px;">
-                            <div class="position-relative">
-                                <img src="tema/img/testimonial-3.jpg" class="img-fluid rounded-circle py-2" alt="">
-                                <div class="position-absolute" style="top: 33px; left: -25px;">
-                                    <i class="fa fa-quote-left rounded-pill bg-primary text-dark p-3"></i>
-                                </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="d-flex bg-light p-3 rounded contact-btn-link">
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
+                                <i class="fa fa-phone text-dark"></i>
                             </div>
-                            <div class="ms-3">
-                                <h4 class="mb-0">Client Name</h4>
-                                <p class="mb-1">Profession</p>
-                                <div class="d-flex">
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                </div>
+                            <div class="ms-3 contact-link">
+                                <h4 class="text-dark">Call Us</h4>
+                                <a class="h5 text-dark fs-6" href="tel:<?php echo"$k_k[no_telp]";?>"><?php echo"$k_k[no_telp]";?></a>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-content rounded mb-4 p-4">
-                            <p class="fs-5 m-0">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam quis tempor.</p>
-                        </div>
-                        <div class="d-flex align-items-center  mb-4" style="padding: 0 0 0 25px;">
-                            <div class="position-relative">
-                                <img src="tema/img/testimonial-4.jpg" class="img-fluid rounded-circle py-2" alt="">
-                                <div class="position-absolute" style="top: 33px; left: -25px;">
-                                    <i class="fa fa-quote-left rounded-pill bg-primary text-dark p-3"></i>
-                                </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="d-flex bg-light p-3 rounded contact-btn-link">
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
+                                <i class="fa fa-envelope text-dark"></i>
                             </div>
-                            <div class="ms-3">
-                                <h4 class="mb-0">Client Name</h4>
-                                <p class="mb-1">Profession</p>
-                                <div class="d-flex">
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                    <small class="fas fa-star text-primary me-1"></small>
-                                </div>
+                            <div class="ms-3 contact-link">
+                                <h4 class="text-dark">Email Us</h4>
+                                <a class="h5 text-dark fs-6" href="<?php echo"$k_k[alias]";?>"><?php echo"$k_k[alias]";?></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Testiminial End -->
+        <!-- Contact End -->
 
 <?php include "bawah.php"; ?>
         

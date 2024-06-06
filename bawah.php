@@ -68,7 +68,7 @@ while ($t=mysqli_fetch_array($tebaru)){ ?>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                        <a href="#" class="text-primary mb-0 display-6">Pest<span class="text-white">Kit</span><i class="fa fa-spider text-primary ms-2"></i></a>
+                        <a href="#" class="text-primary mb-0 display-6"><?php echo"$k_k[nama]";?></a>
                     </div>
                     <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
                         <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-twitter"></i></a>

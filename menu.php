@@ -26,7 +26,7 @@
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
                     <a href="index.php" class="navbar-brand">
-                        <h1 class="text-primary mb-0 display-5"><i class="fa fa-spider text-primary ms-2"></i><?php echo"$k_k[nama]";?></h1>
+                        <h1 class="text-primary mb-0 display-5"><i class="fas fa-city text-primary ms-2"></i> <?php echo"$k_k[nama]";?></h1>
                     </a>
                     <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-dark"></span>
@@ -46,7 +46,7 @@ while ($r=mysqli_fetch_array($sql)){
                             </div>
                             <a href="index.php#informasi" class="nav-item nav-link">Informasi</a>
                             <a href="index.php#galeri" class="nav-item nav-link">Galeri</a>
-                            <a href="index.php#hubungi" class="nav-item nav-link">Hubungi Kami</a>
+                            <a href="index.php#kontak" class="nav-item nav-link">Hubungi Kami</a>
                         </div>
                     </div>
                 </nav>
